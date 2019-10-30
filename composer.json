@@ -1,0 +1,8 @@
+{
+    "require": {
+        "johnpbloch/wordpress": "^5.2"
+    },
+    "extra": {
+        "wordpress-install-dir":"wp"
+    }
+}
