@@ -14,6 +14,8 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 // chokidar (https://github.com/paulmillr/chokidar) : permet d'ajouter des écouteurs d'événement sur des modifications de fichiers
 const chokidar = require('chokidar');
+// webpack-build-notifier (https://www.npmjs.com/package/webpack-build-notifier)
+const WebpackBuildNotifierPlugin = require('webpack-build-notifier');
 
 const watchMode = process.env.NODE_ENV === 'watch';
 
@@ -64,6 +66,18 @@ let config = {
           }
         ]
       },
+      // Fonts
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: 'fonts/',
+            publicPath: '../fonts'
+          }
+        },
+      }
     ]
   },
   // Configuration du serveur de développement qui rechargera automatiquement les contenus lors d'un changement
@@ -115,6 +129,7 @@ let config = {
         reload: false
       }
     ),
+    new WebpackBuildNotifierPlugin({})
   ]
 };
 
