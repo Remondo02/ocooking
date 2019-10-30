@@ -1,3 +1,7 @@
 /vendor
 
 /wp
+/content/themes/*
+/content/plugins/*
+
+!/content/*/.gitkeep
