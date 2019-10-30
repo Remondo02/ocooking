@@ -3,7 +3,5 @@
 /wp
 /wp-config.php
 
-/content/themes/*
-/content/plugins/*
-
+/content/*
 !/content/*/.gitkeep
