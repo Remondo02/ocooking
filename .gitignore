@@ -3,5 +3,13 @@
 /wp
 /wp-config.php
 
-/content/*
+/content/plugins/*
+
+/content/themes/*
+!/content/themes/ocooking
+
+/content/languages
+/content/upgrade
+/content/uploads
+
 !/content/*/.gitkeep
