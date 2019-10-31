@@ -1,0 +1,15 @@
+.menu {
+    &__list {
+        display: flex;
+        list-style: none;
+
+        &__list-item {
+        }
+    }
+
+    &--vertical {
+        .menu__list {
+            display: block;
+        }
+    }
+}
