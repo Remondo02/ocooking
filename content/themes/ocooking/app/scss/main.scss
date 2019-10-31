@@ -1,16 +1,31 @@
 @charset 'UTF-8';
 
- // 1. Abstracts
- @import 'abstracts/variables';
+// 1. Abstracts
+@import 'abstracts/variables',
+        'abstracts/mixins';
 
- // 2. Vendors
- @import '~font-awesome/scss/font-awesome';
- @import '~bootstrap/scss/bootstrap';
+// 2. Vendors
+@import '~font-awesome/scss/font-awesome';
+@import '~bootstrap/scss/bootstrap';
 
- // 3. Base
+// 3. Base
+@import 'base/base',
+        'base/fonts',
+        'base/typography';
 
- // 4. Layout
+// 4. Layout
+@import 'layout/header',
+        'layout/main',
+        'layout/sidebar',
+        'layout/footer';
 
- // 5. Components
+// 5. Components
+@import 'components/button',
+        'components/copyright',
+        'components/logo',
+        'components/menu',
+        'components/post',
+        'components/recipe-proposal';
 
- // 6. Pages
+// 6. Pages
+@import 'pages/home';
