@@ -1,0 +1,47 @@
+.post {
+    display: grid;
+    grid: {
+        template: {
+            areas:
+                "title informations"
+                "thumbnail thumbnail"
+                "excerpt ingredients"
+                "read-next type";
+            columns: 60% 40%;
+            rows: auto;
+        }
+    }
+
+    &__title-author-container {
+        grid-area: title;
+    }
+
+    &__informations {
+        grid-area: informations;
+    }
+
+    &__thumbnail {
+        grid-area: thumbnail;
+
+        &__image {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__excerpt-container {
+        grid-area: excerpt;
+    }
+
+    &__ingredients {
+        grid-area: ingredients;
+    }
+
+    &__read-next-container {
+        grid-area: read-next;
+    }
+
+    &__type-container {
+        grid-area: type;
+    }
+}
