@@ -4,6 +4,7 @@
 /wp-config.php
 
 /content/plugins/*
+!/content/plugins/ocooking-settings
 
 /content/themes/*
 !/content/themes/ocooking
@@ -12,4 +13,4 @@
 /content/upgrade
 /content/uploads
 
-!/content/*/.gitkeep
+/content/db.php
