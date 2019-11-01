@@ -1,4 +1,5 @@
 .post {
+    background-color: $color-background-secondary;
     display: grid;
     grid: {
         template: {
@@ -11,13 +12,24 @@
             rows: auto;
         }
     }
+    padding: $gutter * 3 $gutter * 2;
 
     &__title-author-container {
         grid-area: title;
     }
 
-    &__informations {
+    &__informations-list {
+        border-left: 1px dashed darken($color-background-secondary, 25%);
         grid-area: informations;
+        list-style: none;
+        margin-bottom: $gutter / 2;
+        padding: $gutter;
+
+        &__item {
+            &__name {
+                font-weight: bold;
+            }
+        }
     }
 
     &__thumbnail {
@@ -25,7 +37,6 @@
 
         &__image {
             width: 100%;
-            height: auto;
         }
     }
 
@@ -34,7 +45,23 @@
     }
 
     &__ingredients {
+        display: flex;
         grid-area: ingredients;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        &__item {
+            margin: 0 $gutter / 4;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
     }
 
     &__read-next-container {

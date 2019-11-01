@@ -3,6 +3,7 @@
 class Custom_Post_Type_Recipe
 {
     const POST_TYPE = 'recipe';
+    const INGREDIENT_TAXONOMY = 'recipe-ingredient';
 
     public function __construct()
     {
@@ -52,7 +53,7 @@ class Custom_Post_Type_Recipe
     public function register_taxonomies()
     {
         register_taxonomy(
-            'recipe-ingredient',
+            self::INGREDIENT_TAXONOMY,
             self::POST_TYPE,
             [
                 'labels' => [
