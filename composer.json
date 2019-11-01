@@ -6,7 +6,8 @@
 ],
     "require": {
         "johnpbloch/wordpress": "^5.2",
-        "wpackagist-theme/twentynineteen":"1.4"
+        "wpackagist-theme/twentynineteen":"1.4",
+        "wpackagist-plugin/advanced-custom-fields":"5.8.6"
     },
     "require-dev": {
         "wpackagist-plugin/query-monitor":"3.4.0"
