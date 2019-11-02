@@ -10,7 +10,8 @@
         "wpackagist-plugin/advanced-custom-fields":"5.8.6"
     },
     "require-dev": {
-        "wpackagist-plugin/query-monitor":"3.4.0"
+        "wpackagist-plugin/query-monitor":"3.4.0",
+        "wpackagist-plugin/simply-show-hooks":"1.2.1"
     },
     "extra": {
         "wordpress-install-dir": "wp",

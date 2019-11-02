@@ -1,16 +1,13 @@
 <?php
-
 class Custom_Post_Type_Recipe
 {
     const POST_TYPE = 'recipe';
     const INGREDIENT_TAXONOMY = 'recipe-ingredient';
-
     public function __construct()
     {
         add_action( 'init', [ $this, 'register_post_type' ] );
         add_action( 'init', [ $this, 'register_taxonomies' ] );
     }
-
     public function register_post_type()
     {
         register_post_type(
@@ -42,14 +39,14 @@ class Custom_Post_Type_Recipe
                     'comments',
                     'revisions',
                 ],
-                'has_archive'      => false,
+                'has_archive'      => true,
                 'can_export'       => true,
                 'delete_with_user' => false,
-                'show_in_rest'     => true
+                'show_in_rest'     => true,
+                'show_in_menu'     => true
             ]
         );
     }
-
     public function register_taxonomies()
     {
         register_taxonomy(
@@ -79,7 +76,6 @@ class Custom_Post_Type_Recipe
                 'hierarchical'      => false
             ]
         );
-
         register_taxonomy(
             'recipe-type',
             self::POST_TYPE,

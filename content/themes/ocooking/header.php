@@ -9,16 +9,14 @@
   <header class="header">
     <div class="header__container header__container--start">
       <a class="logo" href="#"><?php bloginfo( 'name' ); ?></a>
-      <nav class="menu">
-        <ul class="menu__list">
-          <li class="menu__list__list-item">
-            <a class="menu__list__list-item__link" href="#">Au hasard</a>
-          </li>
-          <li class="menu__list__list-item">
-            <a class="menu__list__list-item__link" href="#">Recettes</a>
-          </li>
-        </ul>
-      </nav>
+      <?php
+      wp_nav_menu([
+          'theme_location'  => 'header-menu',
+          'container'       => 'nav',
+          'container_class' => 'menu',
+          'menu_class'      => 'menu__list'
+      ]);
+      ?>
     </div>
     <div class="header__container header__container--end">
       <nav class="menu">
