@@ -1,4 +1,4 @@
-<aside class="sidebar">
+  <aside class="sidebar">
     <div class="sidebar__name">oCooking</div>
     <div class="sidebar__baseline">Se faire plaisir tous les jours</div>
     <div class="sidebar__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate accusantium inventore, tenetur nisi sint non, animi exercitationem excepturi at laborum facilis ipsa molestias iste incidunt rerum sed. Sunt dolore, hic exercitationem commodi animi, illum rem provident fuga dignissimos aliquam magni earum sit cupiditate fugiat necessitatibus esse tenetur beatae eligendi consectetur!</div>
@@ -16,6 +16,7 @@
       </ul>
     </nav>
     <form action="" class="recipe-proposal">
+      <div class="recipe-proposal__title">Proposer une recette</div>
       <fieldset>
         <div class="form-group">
           <label for="title">Recette</label>
@@ -33,7 +34,7 @@
         </div>
         <div class="form-group">
           <input type="checkbox" name="publish-agreement" id="publish-agreement" />
-          <label for="publish-agreement">Je suis d'accord pour que cette recette soit publiée sur oCooking</label>
+          <label class="d-inline" for="publish-agreement">Je suis d'accord pour que cette recette soit publiée sur oCooking</label>
         </div>
       </fieldset>
       <button type="submit" class="btn btn-green">Proposer</button>

@@ -15,10 +15,18 @@
     }
 
     .main {
-        margin-right: $gutter-layout;
+        margin-right: $gutter * 2;
+
+        @include media-breakpoint-up('xl') {
+            margin-right: $gutter-layout;
+        }
     }
 
     .sidebar {
-        margin-left: $gutter-layout;
+        margin-left: $gutter * 2;
+
+        @include media-breakpoint-up('xl') {
+            margin-left: $gutter-layout;
+        }
     }
 }

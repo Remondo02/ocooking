@@ -18,9 +18,9 @@ function the_ingredients()
 
     if ( ! empty( $ingredient_list ) ) :
     ?>
-    <ul class="ingredients">
+    <ul class="home-post__ingredients">
         <?php foreach ( $ingredient_list as $ingredient ) : ?>
-        <li class="ingredients__item"><a href="<?= get_term_link( $ingredient ); ?>" class="badget badge-pill badge-dark"><?= $ingredient->name; ?></a></li>
+        <li class="home-post__ingredients__item"><a href="<?= get_term_link( $ingredient ); ?>" class="badget badge-pill badge-dark"><?= $ingredient->name; ?></a></li>
         <?php endforeach; ?>
     </ul>
     <?php

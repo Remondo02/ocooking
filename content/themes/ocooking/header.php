@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<?php wp_head(); ?>
+  <?php wp_head(); ?>
 </head>
-<body class="home">
+<body <?php body_class(); ?>>
   <header class="header">
     <div class="header__container header__container--start">
-      <a class="logo" href="#">oCooking</a>
+      <a class="logo" href="#"><?php bloginfo( 'name' ); ?></a>
       <nav class="menu">
         <ul class="menu__list">
           <li class="menu__list__list-item">
             <a class="menu__list__list-item__link" href="#">Au hasard</a>
           </li>
           <li class="menu__list__list-item">
-            <a href="#">Recettes</a>
+            <a class="menu__list__list-item__link" href="#">Recettes</a>
           </li>
         </ul>
       </nav>
@@ -27,7 +27,7 @@
             <a class="menu__list__list-item__link" href="#"><i class="fa fa-facebook"></i></a>
           </li>
           <li class="menu__list__list-item">
-            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a class="menu__list__list-item__link" href="#"><i class="fa fa-twitter"></i></a>
           </li>
         </ul>
       </nav>
