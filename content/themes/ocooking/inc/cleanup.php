@@ -1,5 +1,9 @@
 <?php
 
+add_action( 'ocooking_after_setup_theme', 'ocooking_theme_cleanup' );
+
+function ocooking_theme_cleanup()
+{
 // Supprime WP EMOJI
 remove_action( 'wp_head', 'print_emoji_detection_script', 7);
 remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
@@ -20,3 +24,4 @@ remove_action( 'wp_head', 'feed_links_extra', 3 );
 
 // Supprime les feeds des Posts et des Commentaires
 remove_action( 'wp_head', 'feed_links', 2 ); 
+}
