@@ -1,0 +1,193 @@
+# Copyright (C) 2019 oCooking Settings
+# This file is distributed under the same license as the oCooking Settings package.
+msgid ""
+msgstr ""
+"Project-Id-Version: oCooking Settings 1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/ocooking-settings\n"
+"POT-Creation-Date: 2019-03-06 10:52:10+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2019-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: includes/class-custom-post-type-recipe.php:20
+msgid "Recettes"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:21
+msgid "Recette"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:22
+msgid "Ajouter une nouvelle recette"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:23
+msgid "Editer la recette"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:24
+msgid "Nouvelle recette"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:25
+msgid "Voir la recette"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:26
+msgid "Voir les recettes"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:27
+msgid "Rechercher des recettes"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:28
+msgid "Aucune recette trouvée"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:29
+msgid "Aucune recette trouvée dans la corbeille"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:30
+msgid "Toutes les recettes"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:61
+msgid "Ingrédients"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:62
+msgid "Ingrédient"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:63
+msgid "Tous les ingrédients"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:64
+msgid "Editer un ingrédient"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:65
+msgid "Voir un ingrédient"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:66
+msgid "Mise à jour d'un ingrédient"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:67
+msgid "Ajouter un nouvel ingrédient"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:68
+msgid "Nom du nouvel ingrédient"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:69
+msgid "Rechercher des ingrédients"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:70
+msgid "Ingrédients populaires"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:71
+msgid "Séparer les ingrédients avec une virgule"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:72
+msgid "Ajouter ou supprimer un ingrédient"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:73
+msgid "Choisir un ingrédient parmi les plus utilisés"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:74
+msgid "Aucun ingrédient trouvé"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:75
+msgid "Retour aux ingrédients"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:89
+msgid "Types"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:90
+msgid "Type"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:91
+msgid "Tous les types"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:92
+msgid "Editer un type"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:93
+msgid "Voir un type"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:94
+msgid "Mise à jour d'un type"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:95
+msgid "Ajouter un nouveau type"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:96
+msgid "Nom du nouveau type"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:97
+msgid "Rechercher des types"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:98
+msgid "Types populaires"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:99
+msgid "Séparer les types avec une virgule"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:100
+msgid "Ajouter ou supprimer un type"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:101
+msgid "Choisir un type parmi les plus utilisés"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:102
+msgid "Aucun type trouvé"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:103
+msgid "Retour aux types"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:104
+msgid "Type parent"
+msgstr ""
+
+#: includes/class-custom-post-type-recipe.php:105
+msgid "Type parent :"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "oCooking Settings"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Nova"
+msgstr ""
