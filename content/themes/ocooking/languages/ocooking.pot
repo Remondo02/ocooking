@@ -1,0 +1,76 @@
+# Copyright (C) 2019 Nova
+# This file is distributed under the same license as the oCooking package.
+msgid ""
+msgstr ""
+"Project-Id-Version: oCooking 1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/ocooking\n"
+"POT-Creation-Date: 2019-03-06 10:25:52+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2019-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: inc/menus.php:8
+msgid "Menu de l'en-tête"
+msgstr ""
+
+#: inc/menus.php:9
+msgid "Menu principal"
+msgstr ""
+
+#: inc/menus.php:10
+msgid "Menu de la barre latérale"
+msgstr ""
+
+#: inc/utils.php:24
+msgid "Ingrédient :"
+msgid_plural "Ingrédients :"
+msgstr[0] ""
+msgstr[1] ""
+
+#: template-parts/content/recipe-home.php:4
+msgid "Préparée par"
+msgstr ""
+
+#: template-parts/content/recipe-home.php:7
+msgid "Préparation"
+msgstr ""
+
+#: template-parts/content/recipe-home.php:7
+#: template-parts/content/recipe-home.php:8
+msgid "min."
+msgstr ""
+
+#: template-parts/content/recipe-home.php:8
+msgid "Cuisson"
+msgstr ""
+
+#: template-parts/content/recipe-home.php:9
+msgid "Prix"
+msgstr ""
+
+#: template-parts/content/recipe-home.php:10
+msgid "%1$d € / pers."
+msgstr ""
+
+#: template-parts/content/recipe-home.php:18
+msgid "La recette en résumé"
+msgstr ""
+
+#: template-parts/content/recipe-home.php:23
+msgid "Lire la recette"
+msgstr ""
+
+#: template-parts/content/recipe-home.php:26
+msgid "Recette visibile dans"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "oCooking"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Nova"
+msgstr ""
