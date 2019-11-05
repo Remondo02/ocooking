@@ -5,9 +5,9 @@ add_action( 'init', 'ocooking_register_menus' );
 function ocooking_register_menus()
 {
     register_nav_menus([
-        'header-menu'  => 'Menu de l\'en-tête',
-        'main-menu'    => 'Menu principal',
-        'sidebar-menu' => 'Menu de la barre latérale'
+        'header-menu'  => __( 'Menu de l\'en-tête', OCOOKING_TEXT_DOMAIN ),
+        'main-menu'    => __( 'Menu principal', OCOOKING_TEXT_DOMAIN ),
+        'sidebar-menu' => __( 'Menu de la barre latérale', OCOOKING_TEXT_DOMAIN )
     ]);
 }
 

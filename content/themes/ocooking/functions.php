@@ -1,5 +1,7 @@
 <?php
 
+require get_theme_file_path( 'inc/configuration-constants.php' );
+
 require get_theme_file_path( 'inc/utils.php' );
 
 // Création du hook 'ocooking_theme_setup'
