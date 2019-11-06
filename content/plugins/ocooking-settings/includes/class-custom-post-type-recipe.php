@@ -1,16 +1,13 @@
 <?php
-
 class Custom_Post_Type_Recipe
 {
     const POST_TYPE = 'recipe';
     const INGREDIENT_TAXONOMY = 'recipe-ingredient';
-
     public function __construct()
     {
         add_action( 'init', [ $this, 'register_post_type' ] );
         add_action( 'init', [ $this, 'register_taxonomies' ] );
     }
-
     public function register_post_type()
     {
         register_post_type(
@@ -46,11 +43,20 @@ class Custom_Post_Type_Recipe
                 'can_export'       => true,
                 'delete_with_user' => false,
                 'show_in_rest'     => true,
-                'show_in_menu'     => true
+                'show_in_menu'     => true,
+                'capabilities'     => [
+                    'edit_post'          => 'edit_recipe',
+                    'read_post'          => 'read_recipe',
+                    'delete_post'        => 'delete_recipe',
+                    'edit_posts'         => 'edit_recipes',
+                    'edit_others_posts'  => 'edit_others_recipes',
+                    'publish_posts'      => 'publish_recipes',
+                    'read_private_posts' => 'read_private_recipes',
+                    'create_posts'       => 'edit_recipes',
+                ]
             ]
         );
     }
-
     public function register_taxonomies()
     {
         register_taxonomy(
@@ -77,10 +83,15 @@ class Custom_Post_Type_Recipe
                 'public'            => true,
                 'show_in_rest'      => true,
                 'show_admin_column' => true,
-                'hierarchical'      => false
+                'hierarchical'      => false,
+                'capabilities'      => [
+                    'manage_terms' => 'manage_recipe_terms',
+                    'edit_terms'   => 'manage_recipe_terms',
+                    'delete_terms' => 'manage_recipe_terms',
+                    'assign_terms' => 'edit_recipe'
+                ]
             ]
         );
-
         register_taxonomy(
             'recipe-type',
             self::POST_TYPE,
@@ -107,7 +118,13 @@ class Custom_Post_Type_Recipe
                 'public'            => true,
                 'show_in_rest'      => true,
                 'show_admin_column' => true,
-                'hierarchical'      => true
+                'hierarchical'      => true,
+                'capabilities'      => [
+                    'manage_terms' => 'manage_recipe_terms',
+                    'edit_terms'   => 'manage_recipe_terms',
+                    'delete_terms' => 'manage_recipe_terms',
+                    'assign_terms' => 'edit_recipe'
+                ]
             ]
         );
     }
