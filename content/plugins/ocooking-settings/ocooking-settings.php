@@ -16,7 +16,8 @@ require OCOOKING_PLUGIN_DIR_PATH . '/includes/load-textdomain.php';
 require OCOOKING_PLUGIN_DIR_PATH . '/includes/class-custom-post-type-recipe.php';
 $cpt_recipe = new Custom_Post_Type_Recipe;
 require OCOOKING_PLUGIN_DIR_PATH . '/includes/class-role-cooker.php';
-require OCOOKING_PLUGIN_DIR_PATH . '/includes/admin_menu.php';
+require OCOOKING_PLUGIN_DIR_PATH . '/includes/admin-menu.php';
+require OCOOKING_PLUGIN_DIR_PATH . '/includes/admin-dashboard.php';
 register_activation_hook(
     OCOOKING_PLUGIN_PATH,
     function () use ( $cpt_recipe ) {
