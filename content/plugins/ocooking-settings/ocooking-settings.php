@@ -19,6 +19,7 @@ require OCOOKING_PLUGIN_DIR_PATH . '/includes/class-role-cooker.php';
 require OCOOKING_PLUGIN_DIR_PATH . '/includes/admin-menu.php';
 require OCOOKING_PLUGIN_DIR_PATH . '/includes/admin-dashboard.php';
 require OCOOKING_PLUGIN_DIR_PATH . '/includes/enqueue-scripts.php';
+require OCOOKING_PLUGIN_DIR_PATH . '/includes/admin-cleanup.php';
 register_activation_hook(
     OCOOKING_PLUGIN_PATH,
     function () use ( $cpt_recipe ) {
