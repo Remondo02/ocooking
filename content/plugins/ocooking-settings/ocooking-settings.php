@@ -19,13 +19,14 @@ require OCOOKING_PLUGIN_DIR_PATH . '/includes/class-role-cooker.php';
 require OCOOKING_PLUGIN_DIR_PATH . '/includes/admin-menu.php';
 require OCOOKING_PLUGIN_DIR_PATH . '/includes/admin-dashboard.php';
 require OCOOKING_PLUGIN_DIR_PATH . '/includes/enqueue-scripts.php';
-require OCOOKING_PLUGIN_DIR_PATH . '/includes/admin-cleanup.php';
+//require OCOOKING_PLUGIN_DIR_PATH . '/includes/admin-cleanup.php';
 register_activation_hook(
     OCOOKING_PLUGIN_PATH,
     function () use ( $cpt_recipe ) {
         $role_cooker = new Role_Cooker;
         $role_cooker->add_role();
         $role_cooker->add_capabilities();
+        $cpt_recipe->add_administrator_capabilities();
         $cpt_recipe->register_post_type();
         $cpt_recipe->register_taxonomies();
         flush_rewrite_rules();

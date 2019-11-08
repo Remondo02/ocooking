@@ -128,4 +128,18 @@ class Custom_Post_Type_Recipe
             ]
         );
     }
+    public function add_administrator_capabilities()
+    {
+        $role = get_role( 'administrator' );
+
+        $role->add_cap( 'edit_recipe', true );
+        $role->add_cap( 'read_recipe', true );
+        $role->add_cap( 'delete_recipe', true );
+        $role->add_cap( 'edit_recipes', true );
+        $role->add_cap( 'edit_others_recipes', true );
+        $role->add_cap( 'publish_recipes', true );
+        $role->add_cap( 'read_private_recipes', true );
+        $role->add_cap( 'edit_recipes', true );
+        $role->add_cap( 'manage_recipe_terms', true );
+    }
 }
